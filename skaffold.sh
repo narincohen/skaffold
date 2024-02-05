@@ -32,7 +32,7 @@ sed -i "s/ports/$APP_PORTS/g" ~/$APP_NAME/Dockerfile
 
 #create skaffold.yaml file
 cp $DIR/skaffold.yaml ~/$APP_NAME/skaffold.yaml
-sed -i "s/pathto/$APP_NAME/g" ~/$APP_NAME/skaffold.yaml
+sed -i "s/pathto/\~\/$APP_NAME/g" ~/$APP_NAME/skaffold.yaml
 
 pathto/
 
