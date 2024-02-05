@@ -3,6 +3,13 @@ kind: Config
 build:
   artifacts:
   - imageName: test
+    custom:
+      buildCommand: ./build.sh
+      dependencies:
+        dockerfile:
+          path: pathto/Dockerfile
+          buildArgs:
+            file: foo
     workspace: .
   local: {}
 deploy:

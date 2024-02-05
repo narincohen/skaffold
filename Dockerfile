@@ -1,2 +1,2 @@
-FROM dfhgfg
-EXPOSE 8080 80 
+FROM bla
+EXPOSE bla 
