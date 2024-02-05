@@ -1,0 +1,6 @@
+apiVersion: skaffold/v4beta9
+kind: Config
+build:
+  artifacts:
+  - image: $APP_BASE_IMAGE_URL
+    buildpacks: {}
